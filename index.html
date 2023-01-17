@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/pico.min.css" />
+    <title>wodkiewi.cz / Andrzej Wódkiewicz</title>
+  </head>
+  <body>
+    <main class="container">
+      <hgroup>
+        <h1>Andrzej Wódkiewicz</h1>
+        <h2>Backend Software Developer</h2>
+      </hgroup>
+      <section style="margin-bottom: 1rem" class="grid">
+        <div>Contact me on LinkedIn</div>
+        <div>
+          <a
+            style="white-space: nowrap"
+            href="https://www.linkedin.com/in/andrzej-w%C3%B3dkiewicz-841815164/"
+          >
+            <img style="height: 1rem" src="static/li.png" />
+            Andrzej Wódkiewicz</a
+          >
+        </div>
+      </section>
+      <section style="margin-bottom: 1rem" class="grid">
+        <div>or take a look at my GitHub profile</div>
+        <div>
+          <a style="white-space: nowrap" href="https://github.com/akwodkiewicz">
+            <picture>
+              <source
+                media="(prefers-color-scheme: dark)"
+                srcset="static/github-mark-white.svg"
+              />
+              <source
+                media="(prefers-color-scheme: light)"
+                srcset="static/github-mark.svg"
+              />
+              <img
+                style="height: 1rem"
+                alt="Github logo"
+                src="static/github-mark.svg"
+              />
+            </picture>
+            akwodkiewicz</a
+          >
+        </div>
+      </section>
+      <section style="margin-top: 4rem">
+        <small><span id="goodbye"><span></small>
+      </section>
+    </main>
+  </body>
+</html>
+
+<script>
+    const element = document.getElementById('goodbye');
+    const goodbyes = [
+        `It ain't much, but it's honest work.`,
+        `I guess it's a no-brainer this website was created by a <em>backend</em> developer.`,
+        'I was supposed to be a physicist, but apparently <em>Computer Science</em> was a wrong program to get there.',
+    ];
+    const idx = Math.round(Math.random()*(goodbyes.length - 1));
+    element.innerHTML = goodbyes[idx];
+
+    console.info(`There's nothing here, really`);
+</script>
